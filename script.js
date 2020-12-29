@@ -25,7 +25,7 @@ function currentTime12hrs() {
   let hours = date.getHours();
   const suffix = hours < 12 ? 'am' : 'pm';
   
-  if (to12hrs[hours]) {hours = to12hrs[hours];}
+  if (to12hrs[hours]) { hours = to12hrs[hours]; }
   
   const minutes = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
   return `${hours}:${minutes}${suffix}`;
